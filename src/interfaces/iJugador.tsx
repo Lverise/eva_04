@@ -6,4 +6,5 @@ export interface Jugador{
     sobreTi:string,
     lineaPreferida:string,
     sexo:string,
+    key?:string
 }

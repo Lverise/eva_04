@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from '../styles/registro.module.css'
 import { Jugador } from '@/interfaces/iJugador';
 import { registrarJugador } from '@/Firebase/Promesas';
+import Link from 'next/link';
 
 const initialState:Jugador = {
     nombre:"",
@@ -36,6 +37,7 @@ export const Registro = () => {
 
   return (
     <>
+    <Link href="/Menu"><Button>Volver</Button></Link>
     <div className={styles.divRegistro}>
     <h1>Registro</h1>
     <Form>
