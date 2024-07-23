@@ -26,7 +26,7 @@ export const Menu = () => {
             <Link  className={styles.linkMenu} href="/"><Button className={styles.botonesLista}>Salir</Button></Link>
             </ListGroup.Item>
         </ListGroup>
-
+        <h1></h1>
 
 
 
