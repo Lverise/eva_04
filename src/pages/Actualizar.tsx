@@ -35,14 +35,8 @@ export const Actualizar = () => {
                 if(p!=undefined){
                     setJugador(p)
                 }
-                else{
-                    //Volver a la tabla
-                }
             })
-        }else{
-            //Volver a la tabla
-        }
-        
+          }
       },[])
 
       

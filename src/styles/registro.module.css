@@ -64,3 +64,13 @@
 .linkMenu{
     text-decoration: none;
 }
+
+.divLogin{
+    width: 50%;
+    align-items: center;
+    margin: auto;
+    margin-top: 10%;
+    padding: 2%;
+    background-color: #B6E1E7;
+    border-radius: 2%;
+}

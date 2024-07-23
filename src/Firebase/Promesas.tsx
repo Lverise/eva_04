@@ -1,6 +1,7 @@
 import { Jugador } from "@/interfaces/iJugador";
-import { addDoc, collection, doc, getDoc, getDocs, updateDoc } from "firebase/firestore";
+import { addDoc, collection, deleteDoc, doc, getDoc, getDocs, query, updateDoc, where } from "firebase/firestore";
 import { db } from "./Firebase";
+import { Usuario } from "@/interfaces/iUsuario";
 
 
 export const registrarJugador = async(jugador:Jugador)=>{
@@ -50,3 +51,28 @@ export const obtenerJugadores = async()=>{
         const ref = doc(db,"jugadores",p.key!);
         await updateDoc(ref,{...p})
     }
+
+    export const eliminarJugador = async (key: string) => {
+        const ref = doc(db, "jugadores", key);
+        try {
+            await deleteDoc(ref);
+            console.log("Jugador eliminado con éxito");
+        } catch (error) {
+            console.error("Error al eliminar el jugador: ", error);
+        }
+    };
+    
+    export const registrarUsuario = async(usuario:Usuario)=>{
+        const docRef = await addDoc(collection(db, "usuarios"), usuario);
+    }
+
+    export const verificarCredenciales = async (usuario: string, contraseña: string) => {
+    const q = query(
+        collection(db, 'usuarios'),
+        where('usuario', '==', usuario),
+        where('contraseña', '==', contraseña)
+    );
+    
+    const querySnapshot = await getDocs(q);
+    return !querySnapshot.empty;
+    };
