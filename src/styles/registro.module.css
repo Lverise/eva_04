@@ -1,0 +1,17 @@
+.divRegistro{
+    width: 50%;
+    margin: auto;
+    border-style: groove;
+    border-radius: 1%;
+    padding: 1%;
+    background-color: #B6E1E7;
+    margin-top: 1%;
+}
+
+.bodyRegistro{
+    background-color: #F9B872;
+}
+
+.textareaSobreTi{
+    width: 382% !important;
+}
