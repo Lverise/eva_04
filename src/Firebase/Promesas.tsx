@@ -18,7 +18,7 @@ export const obtenerJugadores = async()=>{
             lineaPreferida:doc.data().lineaPreferida,
             nombre:doc.data().nombre,
             sexo:doc.data().sexo,
-            sobreTi:doc.data().sexo,
+            sobreTi:doc.data().sobreTi,
             telefono:doc.data().telefono,
             fechaNacimiento:doc.data().fechaNacimiento,
             key:doc.id

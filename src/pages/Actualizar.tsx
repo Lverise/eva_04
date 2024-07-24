@@ -10,6 +10,7 @@ import Link from 'next/link'
 const initialState:Jugador = {
     nombre:"",
     apellido:"",
+    fechaNacimiento:"",
     telefono:"",
     correo:"",
     sobreTi:"",
