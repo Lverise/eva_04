@@ -66,6 +66,13 @@ export const Actualizar = () => {
         name='apellido' 
         onChange={(e)=>{handleJugador(e.currentTarget.name,e.currentTarget.value)}}/>
       </Form.Group>
+      <Form.Group className="mb-3" controlId="fechaNacimiento">
+        <Form.Label>Fecha de nacimiento:</Form.Label>
+        <Form.Control type="date" placeholder="ej: Titor"
+        value={jugador.fechaNacimiento}
+        name='fechaNacimiento' 
+        onChange={(e)=>{handleJugador(e.currentTarget.name,e.currentTarget.value)}}/>
+      </Form.Group>
       <Form.Group className="mb-3" controlId="telefono">
         <Form.Label>Teléfono:</Form.Label>
         <Form.Control type="tel" placeholder="ej: +56912345678"
