@@ -16,15 +16,9 @@
     width: 382% !important;
 }
 
-.logo{
-    width: 12%;
-    height: 12%;
-    display: block;
-    padding: 2%;
-}
 
 .listaMenu{
-    width: 40%;
+    width: 100%;
     margin: auto;
 }
 
@@ -73,4 +67,45 @@
     padding: 2%;
     background-color: #B6E1E7;
     border-radius: 2%;
+}
+
+.botonCerrar{
+    background-color: #B6E1E7;
+    color: rgb(55, 50, 39) !important;
+
+}
+
+.divLanding{
+    width: 70%;
+    margin: auto;
+    padding: 2%;
+    background-color: #B6E1E7;
+    border-radius: 2%;
+    color:rgb(68, 67, 67);
+}
+
+.estralFoto{
+    width: 70%;
+    height: 70%;
+    display: block;
+    margin: auto;
+    padding-left: 2%;
+    padding-bottom: 2%;
+}
+
+.logo{
+    width: 12%;
+    height: 12%;
+    display: block;
+    padding-left: 2%;
+    padding-bottom: 2%;
+}
+
+.logoRedes{
+    width: 5%;
+    height: 5%;
+}
+
+.unete{
+font-size: 100px;
 }

@@ -3,7 +3,6 @@ import { useRouter } from 'next/router';
 import { Form, Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from '../styles/registro.module.css';
-import Link from 'next/link';
 import { verificarCredenciales } from '@/Firebase/Promesas';
 
 export const Home = () => {
@@ -26,7 +25,6 @@ export const Home = () => {
 
   return (
     <>
-      <Link href="/Menu"><Button>Menu</Button></Link>
       <div className={styles.divLogin}>
         <Form onSubmit={handleLogin}>
           <h1>Inicio de sesión</h1>

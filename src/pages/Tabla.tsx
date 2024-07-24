@@ -45,15 +45,18 @@ export const Tabla = () => {
 
     return (
         <>
+            <Link href="/Menu"><Button>Volver</Button></Link>
             <Table>
                 <thead>
                     <tr>
                         <th>Nombre</th>
                         <th>Apellido</th>
-                        <th>Rut</th>
+                        <th>Fecha de nacimiento</th>
+                        <th>Teléfono</th>
                         <th>Correo</th>
-                        <th>Fecha Nacimiento</th>
-                        <th>Edad</th>
+                        <th>Sobre Ti</th>
+                        <th>Línea preferida</th>
+                        <th>Sexo</th>
                         <th>Acción</th>
                     </tr>
                 </thead>
@@ -62,6 +65,7 @@ export const Tabla = () => {
                         <tr key={p.key}>
                             <td>{p.nombre}</td>
                             <td>{p.apellido}</td>
+                            <td>{p.fechaNacimiento}</td>
                             <td>{p.telefono}</td>
                             <td>{p.correo}</td>
                             <td>{p.sobreTi}</td>

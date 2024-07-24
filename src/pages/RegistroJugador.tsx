@@ -9,6 +9,7 @@ import Link from 'next/link';
 const initialState:Jugador = {
     nombre:"",
     apellido:"",
+    fechaNacimiento:"",
     telefono:"",
     correo:"",
     sobreTi:"",
@@ -53,6 +54,14 @@ export const Registro = () => {
         name='apellido' 
         onChange={(e)=>{handleJugador(e.currentTarget.name,e.currentTarget.value)}}/>
       </Form.Group>
+
+      <Form.Group className="mb-3" controlId="fechaNacimiento">
+        <Form.Label>Fecha de nacimiento:</Form.Label>
+        <Form.Control type="date" placeholder="ej: 17-12-2003" 
+        name='fechaNacimiento'
+        onChange={(e)=>{handleJugador(e.currentTarget.name,e.currentTarget.value)}}/>
+      </Form.Group>
+
       <Form.Group className="mb-3" controlId="telefono">
         <Form.Label>Teléfono:</Form.Label>
         <Form.Control type="tel" placeholder="ej: +56912345678" 

@@ -20,6 +20,7 @@ export const obtenerJugadores = async()=>{
             sexo:doc.data().sexo,
             sobreTi:doc.data().sexo,
             telefono:doc.data().telefono,
+            fechaNacimiento:doc.data().fechaNacimiento,
             key:doc.id
         }
         jugadores.push(jugador)
@@ -39,6 +40,7 @@ export const obtenerJugadores = async()=>{
                 sexo:docSnap.data().sexo,
                 sobreTi:docSnap.data().sobreTi,
                 telefono:docSnap.data().telefono,
+                fechaNacimiento:docSnap.data().fechaNacimiento,
                 key:docSnap.id
             }
             return jugador
